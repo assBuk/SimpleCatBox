@@ -57,12 +57,12 @@ class Program
         if (!string.IsNullOrEmpty(link))
         {
             Clipboard.SetText(link);
-            PlaySoundAsync(Resources.f6);
+            //PlaySoundAsync(Resources.f6);
             MessageBox.Show($"Ссылка скопирована в буфер обмена\n{link}", "Загружено.", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         else
         {
-            PlaySoundAsync(Resources.f6);
+            //PlaySoundAsync(Resources.f6);
             MessageBox.Show("Ссылка не найдена.\nЧто-то пошло не так.", "Ошибка загрузки.", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }

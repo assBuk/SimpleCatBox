@@ -1,14 +1,14 @@
-﻿using SimpleCatBox.Properties;
+//﻿using SimpleCatBox.Properties;
 using System;
 using System.Diagnostics;
 using System.Linq;
-using System.Media;
+//using System.Media;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using System.IO;
-using System.IO.Compression;
+//using System.IO.Compression;
 using System.Threading.Tasks;
-using System.Resources;
+//using System.Resources;
 
 class Program
 {

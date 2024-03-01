@@ -33,10 +33,11 @@ class Program
         var userHash = "1234567zxczxczxc"; // Ваш userhash
 
         var process = new Process
-        {
+        {     
+            //поменять работу с отправкой через system.http
             StartInfo = new ProcessStartInfo
             {
-                FileName = "curl",
+                FileName = "curl", // Curl по умолчанию установлен в системе. Начиная с win 10.
                 Arguments = $"-X POST {url} -H \"Content-Type: multipart/form-data\" -F \"reqtype=fileupload\" -F \"userhash={userHash}\" -F \"fileToUpload=@{filePath}\"",
                 RedirectStandardOutput = true,
                 UseShellExecute = false,
